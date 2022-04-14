@@ -14,6 +14,10 @@
 
 	var valid = document.getElementsByTagName("form")[0];
 	valid.setAttribute("novalidate", "true");
+	
+	$(window).on("load", function() {
+        	$("#valiCode").hide();
+    	});
 
 	unsafeWindow.check = function check() {
 		var id = $("#username").val();
